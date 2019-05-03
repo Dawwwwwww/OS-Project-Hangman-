@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Process {
 
-	final static String[] words = {"Avenger", "Avater", "IRONMAN", "DORAEMON", "ARROW","Annabell","Conan the movie","Harry Potter","Goosebump" };
+	final static String[] words = {"Avenger", "Avater", "Toystory", "DORAEMON", "ARROW","Annabell","Conan the movie","Harry Potter","Goosebump" };
 	private static String word = words[(int) (Math.random() * words.length)];
 	public static String asterisk = new String(new char[word.length()]).replace("\0", "*");
 	public static int count = 0;
