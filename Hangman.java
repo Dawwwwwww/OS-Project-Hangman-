@@ -10,7 +10,7 @@ public class Hangman {
 			System.out.println("Guess any letter in the word");
 			System.out.println(p.asterisk);
 			String guess = sc.next();
-			hang(guess);
+			p.hang(guess);
 		}
 		sc.close();
 		}
