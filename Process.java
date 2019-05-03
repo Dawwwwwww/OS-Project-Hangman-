@@ -29,5 +29,50 @@ public class Process {
 			System.out.println("Correct! You win! The word was " + word);
 		}
 	}
-	
+public static void hangmanImage() {
+  if (count == 1) {
+   System.out.println("Wrong guess, try again");
+   System.out.println();
+   System.out.println();
+   System.out.println();
+   System.out.println();
+   System.out.println("___|___");
+   System.out.println();
+  }
+  if (count == 2) {
+   System.out.println("Wrong guess, try again");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("___|___");
+  }
+  if (count == 3) {
+   System.out.println("Wrong guess, try again");
+   System.out.println("   ____________");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   | ");
+   System.out.println("___|___");
+  }
+  if (count == 4) {
+   System.out.println("Wrong guess, try again");
+   System.out.println("   ____________");
+   System.out.println("   |          _|_");
+   System.out.println("   |         /   \\");
+   System.out.println("   |        |     |");
+   System.out.println("   |         \\_ _/");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("   |");
+   System.out.println("___|___");
+  }	
 }
+
