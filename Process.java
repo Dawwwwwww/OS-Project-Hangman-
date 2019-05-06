@@ -111,5 +111,6 @@ public static void hangmanImage() {
 			System.out.println("___|___      /   \\");
 			System.out.println("GAME OVER! The word was " + word);
 		}
+	}
 }
 
