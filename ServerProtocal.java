@@ -14,7 +14,7 @@ public class MultiThreadRespond implements Runnable {
     public String INPUT = "INPUT";
 
     final static String[] words = { "AVENGER", "AVATAR", "TOYSTORY", "DORAEMON", "ARROW", "ANNABELL", "CONAN",
-            "HARRYPOTTER", "GOOSEBUMP", "STARWAR", "SHAZAM", "THEMATRIX", "TRANFORMERS","ARRIETTY","UP" };
+            "HARRYPOTTER", "GOOSEBUMP", "STARWAR", "SHAZAM", "THEMATRIX", "TRANFORMERS","ARRIETTY","UP","JUMANJI" };
     private static String word = words[(int) (Math.random() * words.length)];
     public static String asterisk = new String(new char[word.length()]).replace("\0", "*");
     public static int count = 0;
