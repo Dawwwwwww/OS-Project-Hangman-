@@ -56,7 +56,7 @@ public class Client {
 
             }
 
-            // send "exit" for tell server thread to close socket
+            // send "exit" for tell server thead to close socket
             socketOutput.writeObject("exit");
 
             // close socket

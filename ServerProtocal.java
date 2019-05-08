@@ -4,7 +4,7 @@ import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class MultiThreadRespond implements Runnable {
+public class ServerProtocal implements Runnable {
     private ServerSocket server;
     private int port;
     private ObjectOutputStream socketOutput;
@@ -12,6 +12,7 @@ public class MultiThreadRespond implements Runnable {
 
     public String OUTPUT = "PRINT";
     public String INPUT = "INPUT";
+    
 
     final static String[] words = { "AVENGER", "AVATAR", "TOYSTORY", "DORAEMON", "ARROW", "ANNABELL", "CONAN",
             "HARRYPOTTER", "GOOSEBUMP", "STARWAR", "SHAZAM", "THEMATRIX", "TRANFORMERS","ARRIETTY","UP","JUMANJI" };
@@ -21,7 +22,7 @@ public class MultiThreadRespond implements Runnable {
 
     private int MAX_TRY = 7;
 
-    public MultiThreadRespond(int port) {
+    public ServerProtocal(int port) {
         this.port = port;
         try {
             server = new ServerSocket(port);
@@ -66,6 +67,7 @@ public class MultiThreadRespond implements Runnable {
 
         System.out.println("newasterisk " + newasterisk);
 
+
         if (asterisk.equals(newasterisk)) {
             count++;
             hangmanImage();
@@ -74,6 +76,7 @@ public class MultiThreadRespond implements Runnable {
         }
         if (asterisk.equals(word)) {
             send_client_print("Correct! You win! The word was " + word);
+            System.exit(0);
         }
     }
 
@@ -158,6 +161,7 @@ public class MultiThreadRespond implements Runnable {
             send_client_print("   |          / \\ ");
             send_client_print("___|___      /   \\");
             send_client_print("GAME OVER! The word was " + word);
+            System.exit(0);
         }
     }
 
