@@ -161,7 +161,6 @@ public class ServerProtocal implements Runnable {
             send_client_print("   |          / \\ ");
             send_client_print("___|___      /   \\");
             send_client_print("GAME OVER! The word was " + word);
-            System.exit(0);
         }
     }
 
